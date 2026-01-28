@@ -1,144 +1,43 @@
 /* =========================
-   VARIABLES GLOBALES
+   VARIABLES
 ========================= */
-:root {
-    --color-dark: #1f1f1f;
-    --color-light: #ffffff;
-    --color-accent: #f0c14b;
-}
-
 /* =========================
-   ESTILOS GENERALES
+   BASE
 ========================= */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
 }
 
 /* =========================
-   HERO
-========================= */
-.hero {
-    height: 70vh;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../img/hero.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-/* =========================
-   DISCIPLINAS
-========================= */
-
-/* Grid general */
-.disciplinas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-/* Card */
-.disciplina-card {
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.disciplina-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Item interno */
-.disciplina-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-}
-
-.disciplina-item img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-}
-
-/* =========================
-   NAVBAR PERSONALIZADA
+   NAVBAR
 ========================= */
 .navbar-custom {
-    background-color: var(--color-dark);
+  background-color: #0d6efd;
 }
-
-.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand {
+  color: #f8f9fa;
+  font-weight: bold;
+}
+.navbar-custom .navbar-brand:hover {
+  color: #000;
+}
 .navbar-custom .nav-link {
-    color: var(--color-light);
-    transition: color 0.2s ease;
+  color: #f8f9fa;
 }
-
-/* Hover / Focus / Activo */
-.navbar-custom .nav-link:hover,
-.navbar-custom .nav-link:focus,
-.navbar-custom .nav-link.active {
-    color: var(--color-accent);
-    background-color: transparent;
-    box-shadow: none;
-}
-
-/* Botón hamburguesa */
-.navbar-custom .navbar-toggler {
-    border-color: var(--color-light);
-}
-
-.navbar-custom .navbar-toggler:focus {
-    box-shadow: none;
+.navbar-custom .nav-link:hover {
+  text-decoration: underline;
 }
 
 /* =========================
-   FOOTER
+   CARDS
 ========================= */
-.footer-custom {
-    background-color: var(--color-dark);
-    color: var(--color-light);
+.disciplina-card {
+  transition: transform 0.3s ease;
+}
+.disciplina-card:hover {
+  transform: translateY(-5px);
 }
 
-.navbar-custom .navbar-toggler-icon {
-    filter: invert(1);
-}
-
-/* =========================
-   REGLAS BÁSICAS PARA MOBILE
-========================= */
-@media (max-width: 768px) {
-
-    /* Hero más bajito */
-    .hero {
-        height: 50vh;
-        padding: 2rem 1rem;
-    }
-
-    /* Cards más compactas */
-    .disciplina-card {
-        margin-bottom: 1.5rem;
-    }
-
-    /* Ajuste de texto */
-    .card-title {
-        font-size: 1.2rem;
-    }
-
-    .card-text {
-        font-size: 0.9rem;
-    }
-
-    /* Navbar: links centrados y más espacio */
-    .navbar-custom .navbar-nav {
-        text-align: center;
-    }
-
-    .navbar-custom .nav-link {
-        padding: 0.5rem 0;
-    }
-}
+/*# sourceMappingURL=style.css.map */

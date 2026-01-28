@@ -1,0 +1,57 @@
+/* =========================
+   VARIABLES
+========================= */
+
+$primary-color: #0d6efd;
+$secondary-color: #212529;
+$light-color: #f8f9fa;
+$dark-color: #000;
+
+$font-base: Arial, sans-serif;
+
+/* =========================
+   BASE
+========================= */
+
+body {
+  font-family: $font-base;
+  color: $secondary-color;
+  background-color: $light-color;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar-custom {
+  background-color: $primary-color;
+
+  .navbar-brand {
+    color: $light-color;
+    font-weight: bold;
+
+    &:hover {
+      color: $dark-color;
+    }
+  }
+
+  .nav-link {
+    color: $light-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.disciplina-card {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
