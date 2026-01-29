@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-secundario;
+}

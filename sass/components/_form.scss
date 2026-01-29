@@ -1,0 +1,9 @@
+@use "../utilities/variables" as *;
+
+.contacto-form {
+  max-width: 500px;
+
+  button {
+    margin-top: 1rem;
+  }
+}

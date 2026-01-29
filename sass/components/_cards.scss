@@ -1,0 +1,21 @@
+@use "../utilities/variables" as *;
+
+.disciplina-card {
+  border: none;
+  border-radius: $radio-borde;
+  overflow: hidden;
+  transition: $transicion-base;
+
+  img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

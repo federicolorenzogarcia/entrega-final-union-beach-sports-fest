@@ -1,40 +1,104 @@
-/* =========================
-   VARIABLES
-========================= */
-/* =========================
-   BASE
-========================= */
+@charset "UTF-8";
+/* Colores */
+/* Tipografía */
+/* Layout */
+/* Transiciones */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: #212529;
   background-color: #f8f9fa;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .navbar-custom {
   background-color: #0d6efd;
 }
 .navbar-custom .navbar-brand {
-  color: #f8f9fa;
+  color: #ffffff;
   font-weight: bold;
 }
 .navbar-custom .navbar-brand:hover {
   color: #000;
 }
 .navbar-custom .nav-link {
-  color: #f8f9fa;
+  color: #ffffff;
 }
 .navbar-custom .nav-link:hover {
   text-decoration: underline;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* Hero */
+.hero {
+  min-height: 70vh;
+  background: url("../img/hero.jpg") center/cover no-repeat;
+  position: relative;
+}
+.hero.hero-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #212529;
+}
+
+.footer-custom {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 1.5rem 0;
+}
+.footer-custom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .disciplina-card {
-  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.disciplina-card img {
+  height: 220px;
+  object-fit: cover;
+}
+.disciplina-card .card-body {
+  text-align: center;
 }
 .disciplina-card:hover {
   transform: translateY(-5px);
