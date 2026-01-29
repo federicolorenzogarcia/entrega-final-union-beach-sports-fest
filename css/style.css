@@ -104,4 +104,10 @@ h3 {
   transform: translateY(-5px);
 }
 
+@media (max-width: 500px) {
+  .disciplina-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
