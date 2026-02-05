@@ -167,8 +167,8 @@ main h3 {
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
-  animation: fadeUp 0.8s ease forwards;
-  opacity: 0;
+  animation: fadeUp 0.8s ease;
+  opacity: 1;
 }
 .galeria img:hover {
   transform: scale(1.05);
