@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+
+.galeria-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: $radio-borde;
+  transition: $transicion-base;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

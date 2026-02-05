@@ -1,15 +1,21 @@
 @use "../utilities/variables" as *;
 
 main {
-  padding: 2rem 0;
-}
+  padding: 0;
 
-section {
-  margin-bottom: 4rem;
-}
+  section {
+    margin-bottom: 4rem;
+  }
 
-h1,
-h2,
-h3 {
-  color: $color-secundario;
+  h1 {
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-top: 3rem;
+  }
+
+  h3 {
+    color: $color-secundario;
+  }
 }
