@@ -1,13 +1,60 @@
 @use "../utilities/variables" as *;
 
-.galeria-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: $radio-borde;
-  transition: $transicion-base;
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 2rem;
 
-  &:hover {
-    transform: scale(1.03);
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: $radio-borde;
+    cursor: pointer;
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      filter: brightness(1.05);
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+
+    img {
+      height: 240px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .galeria {
+    grid-template-columns: 1fr;
+
+    img {
+      height: 220px;
+    }
+  }
+}
+
+/* Animación */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
