@@ -29,6 +29,20 @@ img {
   display: block;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .navbar-custom {
   background-color: #0b4a6b;
 }
